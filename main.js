@@ -90,20 +90,20 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                     {
                         name: "Directory",
                         id: "menu1",
-                        href: "#",
+                        href: "/stores",
                         sub_menu: [
-                            {
-                                name: "Directory",
-                                href: "/stores"
-                            },
+                            // {
+                            //     name: "Directory",
+                            //     href: "/stores"
+                            // },
                             // {
                             //     name: "Center Map",
                             //     href: "/map"
                             // },
-                            {
-                                name: "Dining",
-                                href: "/stores?category=dining_full_service"
-                            }
+                            // {
+                            //     name: "Dining",
+                            //     href: "/stores?category=dining_full_service"
+                            // }
                         ]
                     },
                     {
