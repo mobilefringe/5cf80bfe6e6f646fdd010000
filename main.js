@@ -116,7 +116,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                     },
                     {
                         name: "Dine",
-                        href: "/stores?category=dining_full_service",
+                        href: "/dine",
                     },
                     {
                         name: "Center Information",
