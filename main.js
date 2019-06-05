@@ -91,7 +91,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         name: "Directory",
                         id: "menu1",
                         href: "/stores",
-                        sub_menu: [
+                        // sub_menu: [
                             // {
                             //     name: "Directory",
                             //     href: "/stores"
@@ -104,7 +104,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                             //     name: "Dining",
                             //     href: "/stores?category=dining_full_service"
                             // }
-                        ]
+                        // ]
                     },
                     {
                         name: "Events & Promotions",
