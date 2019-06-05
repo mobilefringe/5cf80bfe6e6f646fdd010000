@@ -141,7 +141,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                             // },
                             {
                                 name: "Specialty Leasing",
-                                href: "/leasing"
+                                href: "/specialty-leasing"
                             },
                             {
                                 name: "Newsletter Sign Up",
