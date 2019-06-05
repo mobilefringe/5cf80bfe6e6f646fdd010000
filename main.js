@@ -119,24 +119,24 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         id: "menu2",
                         href: "#",
                         sub_menu: [
+                            // {
+                            //     name: "Center Information",
+                            //     href: "/center-information"
+                            // },
                             {
-                                name: "Center Information",
-                                href: "/center-information"
+                                name: "Jobs",
+                                href: "/jobs"
                             },
                             {
                                 name: "Contact Us",
                                 href: "/contact-us"
-                            },
-                            {
-                                name: "Jobs",
-                                href: "/jobs"
                             },
                             // {
                             //     name: "Coupons",
                             //     href: "/coupons"
                             // },
                             {
-                                name: "Leasing",
+                                name: "Specialty Leasing",
                                 href: "/leasing"
                             },
                             {
