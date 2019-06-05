@@ -153,7 +153,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                 social_media: [
                     {
                         name: "Facebook",
-                        url: "https://www.facebook.com",
+                        url: "https://www.facebook.com/shopalamedalanding",
                         iconClass: "fab fa-facebook"
                     },
                     // {
@@ -163,7 +163,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                     // },
                     {
                         name: "Instagram",
-                        url: "https://www.instagram.com",
+                        url: "https://www.instagram.com/shopalamedalanding/",
                         iconClass: "fab fa-instagram"
                     },
                     // {
