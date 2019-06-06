@@ -806,7 +806,7 @@ img{
 .change_color {
     background-color: $secondary;
     font-weight: 700;
-    color: #555;
+    color: #000;
 }
 .list-item {
     display: inline-block;
