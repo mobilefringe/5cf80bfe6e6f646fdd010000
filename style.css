@@ -511,7 +511,7 @@ img{
             .banner_btn {
                 padding: 7px 30px;
                 display: inline-block;
-                border: 1px solid $secondary;
+                border: 1px solid #fff;
                 background: transparent;
                 font-size: 0.9rem;
                 color: $secondary;    
