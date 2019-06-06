@@ -159,6 +159,7 @@
                     'timezone',
                     'processedStores',
                     'processedCategories',
+                    'processedSubcategories',
                     'storesByAlphaIndex',
                     'storesByCategoryName',
                     'findCategoryById',
