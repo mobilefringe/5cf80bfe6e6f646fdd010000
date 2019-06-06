@@ -186,6 +186,7 @@
                 dropDownCats() {
                     var vm = this;
                     var dining_cat =  _.find(this.processedCategories, function(o) { return o.name == "Dining"});
+                    console.log("dining_cat", dining_cat)
                     var subcategories = [];
                     if (dining_cat !== null && dining_cat !== undefined) {
                        subcategories = vm.findSubcategoriesByParentID(dining_cat.id);
