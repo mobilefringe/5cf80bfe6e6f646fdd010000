@@ -1609,7 +1609,7 @@ $anim-speed: 0.3s;
     }
 }
 .store_logo_container:hover {
-    background: black;
+    background: $primary;
     .store_img {
         display: block;
         -webkit-filter: blur(2px);
