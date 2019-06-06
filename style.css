@@ -416,7 +416,7 @@ img{
             padding: 0 5px;
         }
         .footer_links a {
-            color: $secondary;
+            color: #fff;
         }
     }
     .copyright {
