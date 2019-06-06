@@ -91,20 +91,20 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         name: "Directory",
                         id: "menu1",
                         href: "/stores",
-                        // sub_menu: [
-                            // {
-                            //     name: "Directory",
-                            //     href: "/stores"
-                            // },
+                        sub_menu: [
+                            {
+                                name: "Directory",
+                                href: "/stores"
+                            },
                             // {
                             //     name: "Center Map",
                             //     href: "/map"
                             // },
-                            // {
-                            //     name: "Dining",
-                            //     href: "/stores?category=dining_full_service"
-                            // }
-                        // ]
+                            {
+                                name: "Dining",
+                                href: "/stores?category=dining_full_service"
+                            }
+                        ]
                     },
                     {
                         name: "Events & Promotions",
@@ -114,10 +114,10 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         name: "Location",
                         href: "/location",
                     },
-                    {
-                        name: "Dine",
-                        href: "/dine",
-                    },
+                    // {
+                    //     name: "Dine",
+                    //     href: "/dine",
+                    // },
                     {
                         name: "Center Information",
                         id: "menu2",
