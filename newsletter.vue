@@ -129,7 +129,34 @@
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
-               
+                },
+                validateBeforeSubmit(form) {
+                    this.$validator.validateAll().then((result) => {
+                        if (result) {
+                            let errors = this.errors;
+                            
+                            if(errors.length > 0) {
+                                console.log("Error");
+                                this.formError = true;
+                            }
+                            else {
+                                form.preventDefault();
+                                console.log("No Error", form);
+                                var vm = this;
+                                $.getJSON(
+                                form.target.action + "?callback=?",
+                                $(form.target).serialize(),
+                                function (data) {
+                                    if (data.Status === 400) {
+                                       vm.formError = true;
+                                    } else { // 200
+                                        vm.formSuccess = true;
+                                    }
+                                });
+                                
+                            }
+                        }
+                    })
                 }
             }
         });
