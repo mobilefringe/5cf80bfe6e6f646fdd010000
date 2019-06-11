@@ -80,7 +80,8 @@
                     siteInfo: site,
                     form_data : {},
                     formSuccess : false,
-                    formError: false
+                    formError: false,
+                    pageBanner: null
                 }
             },
             mounted () {
