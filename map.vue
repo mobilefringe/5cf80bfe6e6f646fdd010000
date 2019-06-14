@@ -91,7 +91,8 @@
                     'processedStores',
                     "processedCategories",
                     "storesByCategoryName",
-                    'findCategoryByName'
+                    'findCategoryByName',
+                    'findRepoByName'
                 ]),
                 allStores() {
                     this.processedStores.map(function(store){
