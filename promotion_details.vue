@@ -105,7 +105,6 @@
                         }
 					}
 					this.$breadcrumbs[1].meta.breadcrumb = this.currentPromo.name
-					console.log(this.$breadcrumbs);
 					this.dataLoaded = true;
 				}, error => {
 					console.error("Could not retrieve data from server. Please check internet connection and try again.");
