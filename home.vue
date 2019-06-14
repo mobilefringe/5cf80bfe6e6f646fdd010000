@@ -34,7 +34,7 @@
                 </div>
                 <messages-component></messages-component>
                 <div class="main_container">
-                    <h2 class="home_title center" v-if="featuredItems && featuredItems.length > 0">Events & Promotions</h2>
+                    <h2 class="home_title center">Events & Promotions</h2>
                     <div class="row margin_40 home_events">
                         <div class="col-sm-4" v-if="featuredItems" v-for="item in featuredItems">
                     	    <div v-if="item.eventable_type" class="feature_item_container">
@@ -214,7 +214,7 @@
                         var showOnWebDate = moment.tz(value.show_on_web_date, this.timezone).format();
                         if (today >= showOnWebDate) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1529532181000/promoplaceholder2@2x.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5cf80bfe6e6f646fdd010000/image/png/1560532995376/alameda_placeholder_images.png";
                             }
                             // Sort Featured Promotions
                             if (value.is_featured) {
