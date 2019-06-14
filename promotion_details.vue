@@ -104,7 +104,7 @@
                             }
                         }
 					}
-				// 	this.$breadcrumbs[2].meta.breadcrumb = this.currentPromo.name
+					this.$breadcrumbs[1].meta.breadcrumb = this.currentPromo.name
 					console.log(this.$breadcrumbs);
 					this.dataLoaded = true;
 				}, error => {
