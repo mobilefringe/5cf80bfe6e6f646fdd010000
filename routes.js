@@ -151,24 +151,6 @@ define([], function () {
             ]
         },
         {
-            path: '/events',
-            component: view('default'),
-            meta: {
-                breadcrumb: 'Events',
-            },
-            children: [
-                {
-                    path: ':id',
-                    component: view('event_details'),
-                    meta: {
-                        breadcrumb: 'Event Details',
-                    },
-                    name: 'eventDetails',
-                    props: true
-                }
-            ]
-        },
-        {
             path: '/events-and-promotions',
             component: view('default'),
             meta: {
@@ -179,6 +161,24 @@ define([], function () {
                     path: '',
                     component: view('events_and_promotions'),
                     name: 'events_and_promotions'
+                },
+                {
+                    path: ':id',
+                    component: view('event_details'),
+                    meta: {
+                        breadcrumb: 'Event Details',
+                    },
+                    name: 'eventDetails',
+                    props: true
+                },
+                {
+                    path: ':id',
+                    component: view('promotion_details'),
+                    meta: {
+                        breadcrumb: 'Promotion Details',
+                    },
+                    name: 'promotionDetails',
+                    props: true
                 }
             ]
         },
@@ -257,29 +257,6 @@ define([], function () {
                                 breadcrumb: 'Centre Map',
                             },
                             name: 'map'
-                        }
-                    ]
-                },
-                {
-                    path: '/promotions',
-                    component: view('default'),
-                    meta: {
-                        breadcrumb: 'Sales & Promotions',
-                    },
-                    children: [
-                        {
-                            path: '',
-                            component: view('promotions'),
-                            name: 'promotions'
-                        },
-                        {
-                            path: ':id',
-                            component: view('promotion_details'),
-                            meta: {
-                                breadcrumb: 'Promotion Details',
-                            },
-                            name: 'promotionDetails',
-                            props: true
                         }
                     ]
                 },
