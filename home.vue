@@ -183,26 +183,28 @@
                     'processedEvents'
                 ]),
                 homeBanners() {
-                    var banners = [];
-                    _.forEach(this.$store.state.banners, function (value, key) {
-                        var today = new Date();
-                        var start = new Date (value.start_date);
-                        if (start <= today){
-                            if (value.end_date){
-                                var end = new Date (value.end_date);
-                                if (end >= today){
-                                    banners.push(value);  
-                                }
-                            } else {
-                                banners.push(value);
-                            }
+                    // var banners = [];
+                    // _.forEach(this.$store.state.banners, function (value, key) {
+                    //     var today = new Date();
+                    //     var start = new Date (value.start_date);
+                    //     if (start <= today){
+                    //         if (value.end_date){
+                    //             var end = new Date (value.end_date);
+                    //             if (end >= today){
+                    //                 banners.push(value);  
+                    //             }
+                    //         } else {
+                    //             banners.push(value);
+                    //         }
                             
-                            if (value.cms_fields.subheader) {
-                                value.heading = value.cms_fields.subheader;
-                            }
-                        }
-                    });
-                    banners = _.orderBy(banners, function(o) { return o.position });
+                    //         if (value.cms_fields.subheader) {
+                    //             value.heading = value.cms_fields.subheader;
+                    //         }
+                    //     }
+                    // });
+                    // banners = _.orderBy(banners, function(o) { return o.position });
+                    const banners = [];
+                    banners.push(//codecloud.cdn.speedyrails.net/sites/5cf80bfe6e6f646fdd010000/image/jpeg/1551318122000/land_home_1925x470.jpg);
                     return banners
                 },
                 featuredItems() {
@@ -267,12 +269,7 @@
             methods: {
                 loadData: async function() {
                     try {
-                        let results = await Promise.all([
-                            this.$store.dispatch("getData", "banners"), 
-                            this.$store.dispatch("getData","promotions"), 
-                            this.$store.dispatch("getData", "events"), 
-                            this.$store.dispatch('LOAD_PAGE_DATA', {url: "https://alamedacrossing.mallmaverick.com/api/v4/alamedacrossing/social.json"})
-                        ]);
+                        let results = await Promise.all([this.$store.dispatch("getData", "banners"), this.$store.dispatch("getData","promotions"), this.$store.dispatch("getData", "events"), this.$store.dispatch('LOAD_PAGE_DATA', {url: "https://peninsula.mallmaverick.com/api/v4/peninsula/social.json"})]);
                         return results;
                     } catch(e) {
                         console.log("Error loading data: " + e.message);    
