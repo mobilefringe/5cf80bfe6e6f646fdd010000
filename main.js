@@ -111,9 +111,20 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         name: "Events & Promotions",
                         href: "/events-and-promotions"
                     },
-                    {
+                     {
                         name: "Location",
-                        href: "/location",
+                        id: "menu3",
+                        href: "/stores",
+                        sub_menu: [
+                            {
+                                name: "Location",
+                                href: "/location"
+                            },
+                            {
+                                name: "Shuttle",
+                                href: "/pages/alamedacrossing-shuttle"
+                            }
+                        ]
                     },
                     {
                         name: "Center Information",
