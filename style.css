@@ -330,8 +330,8 @@ img{
         	text-transform: none;
             .dropdown_item {
                 padding: 10px;
-                min-width: 156px;
-                font-size: 0.75rem;
+                min-width: 136px;
+                font-size: 0.875rem;
                 line-height: normal;
                 color: #FFF;
                 a:hover {
@@ -423,11 +423,16 @@ img{
     }
     .footer_content {
         padding: 48px 0;
-        font-size: 1.25rem;
-        line-height: normal;
+        line-height: 1.25;
         text-align: center;
+        .social_icon_container {
+            margin: 10px 0;
+        }
         .social_icon {
             padding: 0 5px;
+            .fab {
+                font-size: 2rem;
+            }
         }
         .footer_links a {
             color: #fff;
@@ -523,10 +528,11 @@ img{
                 }
             }
             .banner_text {
-                margin: 50px 0;
+                margin: 40px 0;
+                font-size: 1.2rem;
             }
             .banner_btn {
-                padding: 7px 30px;
+                padding: 11px 30px;
                 display: inline-block;
                 border: 1px solid #fff;
                 background: transparent;
@@ -659,7 +665,7 @@ img{
                 -webkit-transform: translate(-50%, -50%);
                 -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
-                font-size: 0.656rem;
+                font-size: 0.875rem;
                 line-height: normal;
                 color: #FFF;
                 text-align: center;
@@ -669,7 +675,7 @@ img{
                 position: absolute;
                 bottom: 10px;
                 left: 10px;
-                font-size: 0.656rem;
+                font-size: 0.875rem;
                 line-height: normal;
                 color: #FFF;
             }
@@ -742,7 +748,7 @@ img{
 }
 .page-breadcrumb {
     margin-bottom: 60px;
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     line-height: normal;
     color: $primary;
     .breadcrumbs {
@@ -788,7 +794,7 @@ img{
     z-index: 1;
     border: none;
     background: $primary;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     line-height: normal;
     color: #FFF;
     text-align: center;
@@ -1093,9 +1099,6 @@ $anim-speed: 0.3s;
     margin-bottom: 10px;
 }
 .event_desc {
-    margin-bottom: 10px;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
     color: #000;
     img {
         max-width: 100%;
@@ -1217,7 +1220,6 @@ $anim-speed: 0.3s;
         height: 28px;
         border: none;
         background: transparent;
-        font-size: 0.8125rem;
         line-height: normal;
         color: #555;
     }
