@@ -1229,8 +1229,7 @@ $anim-speed: 0.3s;
     .fa-search {
         position: absolute;
         top: 8px;
-        right: 9px;
-        font-size: 0.875rem;
+        right: 10px;
         line-height: normal;
         color: #555;
     }
@@ -1248,7 +1247,6 @@ $anim-speed: 0.3s;
             color: #555;
             p {
                 margin: 0;
-                font-size: 0.8125rem;
                 line-height: normal;
                 transition: all 0.3s ease;
             }
@@ -1277,7 +1275,6 @@ $anim-speed: 0.3s;
                 height: 30px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 300;
-                font-size: 0.8125rem !important;
                 line-height: normal !important;
                 color: #555; 
             }
@@ -1299,7 +1296,7 @@ $anim-speed: 0.3s;
             background: #ebebeb;
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
-            font-size: 0.8125rem !important;
+            font-size: 1rem !important;
             line-height: normal !important;
             color: #555; 
         }
@@ -1320,7 +1317,6 @@ $anim-speed: 0.3s;
             border-radius: 0;
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
-            font-size: 0.8125rem;
             line-height: normal;
             color: #555; 
         }  
@@ -1405,7 +1401,7 @@ $anim-speed: 0.3s;
     margin: 46px 164px;
     label {
         font-weight: 300;
-        font-size: 0.8125rem;
+        font-size: 0.875rem;
         line-height: 1rem;
     }
     .form-control {
@@ -1413,6 +1409,8 @@ $anim-speed: 0.3s;
         border-radius: 0;
         background: #ebebeb;
         box-shadow: none;
+        font-size: 1rem;
+        line-height: inherit;
         color: #555759;
     }
     .alert-success, .alert-danger {
