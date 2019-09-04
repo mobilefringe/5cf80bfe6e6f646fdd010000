@@ -208,7 +208,6 @@ img{
     height: 4em;
 }
 .loader {
-    // margin: 88px auto;
     min-height: 60px;
     position: relative;
     -webkit-transform: translateZ(0);
@@ -1945,7 +1944,6 @@ $anim-speed: 0.3s;
         }
     }
     #mobile_nav ul .menu_item {
-        // padding: 12px 0;
         display: block;
         font-size: 1.25rem;
         text-align: center;
@@ -2229,10 +2227,6 @@ $anim-speed: 0.3s;
     .main_container {
         width: 100%;
     }
-    /**** FOOOTER *****/ 
-    // #footer .footer_content {
-    //     font-size: 0.9375rem;
-    // }
     /* *** HOME *** */
     .message_content p {
         padding: 0;
