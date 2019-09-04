@@ -1817,8 +1817,8 @@ $anim-speed: 0.3s;
     .visible_phone {
         display: block;
     }
-    .page-content {
-        margin-top: 138px;
+   .page-content {
+        margin-top: 102px;
     }
     .main_container {
         padding: 0 15px;
@@ -1829,8 +1829,8 @@ $anim-speed: 0.3s;
     }
     /* *** HEADER *** */
     #header .site_logo {
-        padding-bottom: 20px;
-        max-width: 162px;
+        padding: 20px 0;
+        max-width: 280px;
     }
     #primary_nav {
         display: none;
