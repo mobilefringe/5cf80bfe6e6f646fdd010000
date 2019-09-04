@@ -425,6 +425,9 @@ img{
         padding: 48px 0;
         line-height: 1.25;
         text-align: center;
+        p {
+            margin: 0 0 5px;
+        }
         .social_icon_container {
             margin: 10px 0;
         }
