@@ -307,17 +307,15 @@ img{
     	padding: 0;
     	list-style: none;
     	position: relative;
-        .menu_item {
+       .menu_item {
             margin: 0;
-        	padding: 6px 0 24px 0;
-            min-width: 156px;
-            margin: auto 20px;
+        	padding: 6px 60px 24px 0;
             display: inline-block;
-            position: relative;
-            line-height: 0.8125rem;
-            text-align: center;
+        	position: relative;
+        	font-size: 0.875rem;
+        	line-height: 1.625rem;
+            text-align: left;
             text-transform: uppercase;
-
             span:hover {
                 cursor: default;
             }
