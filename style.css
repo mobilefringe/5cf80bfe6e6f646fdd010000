@@ -337,8 +337,6 @@ img{
                     color: inherit;
                 }
             	&:hover, &:active, &:focus, &:visited {
-            	    background: $primary;
-            	   // color:  #BAD0D4;
             	   background:  #BAD0D4;
             	   color:$primary;
             	}
