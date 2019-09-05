@@ -340,6 +340,7 @@ img{
             	    background: $primary;
             	   // color:  #BAD0D4;
             	   background:  #BAD0D4;
+            	   color:$primary;
             	}
             }
         }
