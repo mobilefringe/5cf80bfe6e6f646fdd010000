@@ -1429,11 +1429,19 @@ $anim-speed: 0.3s;
     line-height: normal;
 }
 .store_search {
-    width: 208px;
-    height: 33px;
+    width: 215px;
+    height: 35px;
     position: relative;
     float: right;
     background: #ebebeb;
+    .control {
+        border: 1px solid #ebebeb;
+    }
+    input#search_box {
+        padding: 0 0 0 10px;
+        height: 33px;
+        border: none;
+    }
     #searchComponentInput {
         padding: 0 13px;
         height: 33px;
