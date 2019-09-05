@@ -263,8 +263,8 @@ img{
     box-shadow: 1px 1px 7px rgba(12, 12, 12, 0.3);
     .social_icon_container {
         position: absolute;
-        top: 10px;
-        right: 0;
+        top: 0px;
+        right: 10px;
         .social_icon {
             padding: 0 5px;
             .fab {
@@ -278,7 +278,7 @@ img{
         }
     }
     .site_logo {
-        padding-bottom: 38px;
+        padding-bottom: 28px;
         max-width: 185px;
         transition: all 0.3s ease;
         img {
@@ -1842,7 +1842,7 @@ $anim-speed: 0.3s;
         display: none;
     }
     #header .site_logo {
-        padding-bottom: 20px;
+        padding-bottom: 38px;
         max-width: 162px;
     }
     #primary_nav {
