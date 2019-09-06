@@ -259,11 +259,10 @@ img{
 
 /* *** HEADER *** */
 #header {
-    padding: 21px 0 0 0;
     box-shadow: 1px 1px 7px rgba(12, 12, 12, 0.3);
     .social_icon_container {
         position: absolute;
-        top: 0px;
+        top: 28px;
         right: 10px;
         .social_icon {
             padding: 0 5px;
