@@ -277,7 +277,7 @@ img{
         }
     }
     .site_logo {
-        padding-bottom: 28px;
+        padding: 28px 0;
         max-width: 185px;
         transition: all 0.3s ease;
         img {
