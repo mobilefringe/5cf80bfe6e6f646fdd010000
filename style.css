@@ -1861,7 +1861,7 @@ $anim-speed: 0.3s;
         display: none;
     }
     #header .site_logo {
-        padding-bottom: 38px;
+        padding: 20px 0;
         max-width: 162px;
     }
     #primary_nav {
@@ -1879,7 +1879,6 @@ $anim-speed: 0.3s;
         width: 27px;
         height: 27px;
         position: absolute;
-        top: 36px;
         right: 20px;
         display: block;
         -webkit-transform: rotate(0deg);
