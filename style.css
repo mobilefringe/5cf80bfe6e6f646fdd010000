@@ -274,6 +274,9 @@ img{
                     color: $primary;
                 }
             }
+            a {
+                color: $secondary;
+            }
         }
     }
     .site_logo {
