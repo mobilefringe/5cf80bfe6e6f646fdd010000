@@ -16,7 +16,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="margin_60" v-if="main" v-html="main.body"></div>
+                            <div v-if="main" v-html="main.body"></div>
                         </div>
                     </div>
                     <div class="row">
@@ -29,9 +29,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4" v-if="leasingInfo" v-for="item in leasingInfo">
-                            <p class="amenities_title">{{ item.title }}</p>
-                            <div class="amenities_body" v-html="item.body"></div>
+                        <div class="col-md-12">
+                            <div class="leasing_contact" v-if="leasingInfo" v-html="leasingInfo.body"></div>
                         </div>
                     </div>
                 </div>
