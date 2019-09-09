@@ -274,9 +274,9 @@ img{
                     color: $primary;
                 }
             }
-            a {
-                color: black;
-            }
+        }
+        a:hover {
+            color:black;
         }
     }
     .site_logo {
