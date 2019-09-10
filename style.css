@@ -460,7 +460,8 @@ img{
             margin: 0;
         }
         a:hover {
-            color:  #BAD0D4;
+            color:  #fff;
+            text-decoration: underline;
         }
     }
 }
