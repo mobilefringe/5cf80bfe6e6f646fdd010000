@@ -460,7 +460,7 @@ img{
             margin: 0;
         }
         a:hover {
-            color: $secondary;
+            color:  #BAD0D4;
         }
     }
 }
