@@ -439,6 +439,9 @@ img{
             .fab {
                 font-size: 2rem;
             }
+            a:hover {
+                color: #BDAB61;
+            }
         }
         .footer_links a {
             color: #fff;
