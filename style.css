@@ -440,7 +440,7 @@ img{
                 font-size: 2rem;
             }
             a:hover {
-                color: #BDAB61;
+                color: $secondary;
             }
         }
         .footer_links a {
