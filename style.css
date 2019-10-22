@@ -1262,6 +1262,8 @@ $anim-speed: 0.3s;
         z-index: 9;
         border: 0;
         border-radius: 0;
+        max-height: 560px;
+        overflow-y: scroll;
         border-top: 1px solid #555;
         box-shadow: 0 3px 6px 0 rgba(0,0,0,0.15);
         li {
@@ -1280,6 +1282,9 @@ $anim-speed: 0.3s;
             color: #FFF;
         }
     }
+}
+input[type=search] {
+    width: 85%;
 }
 .map_category {
     margin-bottom: 10px;
