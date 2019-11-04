@@ -260,6 +260,29 @@
                             storeHours.push(hours);
                         });
                         this.storeHours = _.sortBy(storeHours, function(o) { return o.day_of_week });
+                        
+                        // DELIVERY
+                        var delivery_category = 8233;
+                        var categories = this.currentStore.categories;
+                        var subcategories = this.currentStore.subcategories;
+                        if (_.includes(categories, delivery_category) && !_.isEmpty(subcategories)) {
+                            this.deliveryAvailable = true;
+                            if (_.includes(subcategories, 7763)) {
+                                this.hasUberEats = true;
+                            }
+                            if (_.includes(subcategories, 7764)) {
+                                this.hasDoordash = true;
+                            }
+                            if (_.includes(subcategories, 7765)) {
+                                this.hasGrubhub = true;
+                            }
+                            if (_.includes(subcategories, 7766)) {
+                                this.hasPostmates = true;   
+                            }
+                            if (_.includes(subcategories, 7767)) {
+                                this.hasRestaurantDelivery = true;   
+                            }
+                        }
                     
                         var vm = this;
                         var temp_promo = [];
