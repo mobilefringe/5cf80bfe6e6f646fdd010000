@@ -98,12 +98,16 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                                 href: "/stores"
                             },
                             {
+                                name: "Center Map",
+                                href: "/map"
+                            },
+                            {
                                 name: "Dining",
                                 href: "/dine"
                             },
                             {
-                                name: "Center Map",
-                                href: "/map"
+                                name: "Delivery",
+                                href: "/delivery"
                             }
                         ]
                     },
