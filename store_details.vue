@@ -273,19 +273,19 @@
                         var subcategories = this.currentStore.subcategories;
                         if (_.includes(categories, delivery_category) && !_.isEmpty(subcategories)) {
                             this.deliveryAvailable = true;
-                            if (_.includes(subcategories, 7763)) {
+                            if (_.includes(subcategories, 8237)) {
                                 this.hasUberEats = true;
                             }
-                            if (_.includes(subcategories, 7764)) {
+                            if (_.includes(subcategories, 8234)) {
                                 this.hasDoordash = true;
                             }
-                            if (_.includes(subcategories, 7765)) {
+                            if (_.includes(subcategories, 8235)) {
                                 this.hasGrubhub = true;
                             }
-                            if (_.includes(subcategories, 7766)) {
+                            if (_.includes(subcategories, 8236)) {
                                 this.hasPostmates = true;   
                             }
-                            if (_.includes(subcategories, 7767)) {
+                            if (_.includes(subcategories, 8244)) {
                                 this.hasRestaurantDelivery = true;   
                             }
                         }
