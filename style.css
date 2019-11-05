@@ -1848,9 +1848,6 @@ input[type=search] {
             text-align: center;
         }
     }
-    .delivery_option:last-of-type {
-        margin: 0;
-    }
 }
 
 @media(max-width: 1024px){
