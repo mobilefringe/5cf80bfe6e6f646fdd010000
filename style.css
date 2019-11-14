@@ -52,7 +52,7 @@ h3 {
     font-size: 1.583rem;
     line-height: normal;
 }
-h4 {
+@mixin store-title {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
