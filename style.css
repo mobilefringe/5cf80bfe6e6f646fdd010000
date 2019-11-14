@@ -448,7 +448,7 @@ img{
             color: #fff;
         }
         .footer_links a:hover {
-            color: $secondary;
+            text-decoration: underline;
         }
     }
     .copyright {
