@@ -76,7 +76,7 @@
             									<div class="store_tag_text">New Store</div>
             								</div>
             								<div class="store_details">
-            								    <div class="store_text"><h4>{{ store.name }}</h4></div>    
+            								    <div class="store_text"><h2>{{ store.name }}</h2></div>    
             								</div>
                                 		</router-link>
                             	    </div>
