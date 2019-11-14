@@ -1700,9 +1700,10 @@ input[type=search] {
             letter-spacing: 0.6px;
             text-transform: uppercase;
             text-align: center;
-            h4 {
+            h2 {
                 margin: 0;
                 color: #FFF;
+                @include store-title
             }
         }
     }
