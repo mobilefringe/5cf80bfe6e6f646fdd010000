@@ -1836,6 +1836,7 @@ input[type=search] {
     margin-bottom: 20px;
     color: $primary;
     text-transform: uppercase;
+    @include store-details-title;
 }
 
 .store_details_delivery {
