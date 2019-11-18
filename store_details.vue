@@ -63,7 +63,7 @@
                                     
                                 </div>
                             </div>
-                            <div class=" margin_30 store_details_desc" v-html="currentStore.rich_description"></div>
+                           
                             <div v-if="currentStore.events">
                                 <h2 class="store_details_title">Current Events</h2>
                                 <div class="row margin_40">
