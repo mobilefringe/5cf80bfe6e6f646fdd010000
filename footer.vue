@@ -19,7 +19,7 @@
                     <div class="margin_20 social_icon_container">
 					    <span class="social_icon" v-for="item in social_media">
                             <a :href="item.url" target="_blank">
-                                <p class="accessibility">{{item.name}}</p>
+                                <p class="visuallyhidden">{{item.name}}</p>
                                 <i :class="item.iconClass" aria-hidden="true"></i>
                             </a>
                         </span>
