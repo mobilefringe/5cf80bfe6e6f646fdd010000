@@ -44,7 +44,7 @@
     					</nav>
     					<div class="nav_container visible_phone">
     					    <transition name="custom-classes-transition" enter-active-class="animated slideInRight" leave-active-class="animated slideOutRight">
-        					    <nav id="mobile_nav" v-show="showMenu" class="">
+        					    <nav id="mobile_nav" v-show="showMenu" role="navigation" aria-label="Mobile">
         					        <ul>
         					            <li v-for="(item, key) in menu_items" class="menu_item">
         							        <router-link :to="item.href" v-if="item.sub_menu == undefined">
