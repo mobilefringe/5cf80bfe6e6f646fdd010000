@@ -107,6 +107,7 @@
             },
             created() {
                 this.$store.dispatch("getData", "contests").then(response => {
+                    console.log(this.processedContests)
                     this.currentContest = this.findContestByShowOnSlug('alamedacrossing-contest');
                     this.dataLoaded = true;
                 }, error => {
