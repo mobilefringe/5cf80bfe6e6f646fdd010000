@@ -3,7 +3,7 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <div class="inside_page_header">
+                <div class="inside_page_header" v-if="pageBanner" v-bind:style="{ background: 'url(' + pageBanner.image_url + ')' }">
                     <div class="main_container position_relative">
                         <h1>Contest</h1>
                     </div>
@@ -106,6 +106,19 @@
                 }
             },
             created() {
+                this.$store.dispatch("getData", "repos").then(response => {
+                    var temp_repo = this.findRepoByName('Events Banner').images;
+                    if(temp_repo != null) {
+                        this.pageBanner = temp_repo[0];
+                    } else {
+                        this.pageBanner = {
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5de7dca36e6f6435b2020000/image/jpeg/1529532304000/insidebanner2.jpg"
+                        }
+                    }
+                }, error => {
+                    console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                }); 
+                
                 this.$store.dispatch("getData", "contests").then(response => {
                     console.log(this.processedContests)
                     this.currentContest = this.findContestByShowOnSlug('alamedacrossing-contest');
