@@ -96,7 +96,7 @@
             data: function() {
                 return {
                     dataLoaded: false,
-                    pageBanner: {},
+                    pageBanner: null,
                     form_data: {},
                     formSuccess: false,
                     formError: false,
