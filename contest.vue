@@ -5,7 +5,7 @@
             <div v-if="dataLoaded" v-cloak>
                 <div class="inside_page_header">
                     <div class="main_container position_relative">
-                        <h2>Contest</h2>
+                        <h1>Contest</h1>
                     </div>
                 </div>
                 <div class="main_container">
