@@ -27,7 +27,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <nav id="primary_nav" role="navigation" aria-label="Main">
+                        <!--<nav id="primary_nav" role="navigation" aria-label="Main">
     						<ul>
     						    <li class="menu_item" v-for="item in menu_items" :id="item.id">
     						        <router-link v-if="item.sub_menu == undefined" :to="item.href">{{ item.name }}</router-link>
@@ -36,6 +36,22 @@
     						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
     						                <router-link :to="sub_menu.href">
 						                        <p>{{ sub_menu.name }}</p>
+					                        </router-link>
+    						            </li>
+    								</ul>
+    						    </li>
+    						</ul>
+    					</nav>-->
+    					<nav id="primary_nav" role="navigation" aria-label="Main">
+    						<ul>
+    						    <li class="menu_item" v-for="(item,index) in menu_items" :id="item.id">
+    						        <router-link v-if="item.sub_menu == undefined" :to="item.href">{{ item.name }}</router-link>
+    						        <span tabindex=0 v-if="item.sub_menu != undefined" @focus="showSubMenu(item.id)" @blur="hideSubMenu()">{{ item.name }}</span>
+    						        <ul v-if="item.sub_menu" :class="['subdropdown', {'show_sub_menu': showSubMenuWithID(item.id)}]">
+    						            <li  v-for="(sub_menu,index) in item.sub_menu" class="dropdown_item">
+    						                <router-link :to="sub_menu.href" tabindex=0 @focus.native="showSubMenu(item.id)" @blur.native="hideSubMenu()" 
+    						                @click.native="hideSubMenu()">
+						                        {{ sub_menu.name }}
 					                        </router-link>
     						            </li>
     								</ul>
@@ -103,6 +119,8 @@
                     scrollY: false,
                     siteInfo: site,
                     showDropDown: false
+                    showSubMenuItem: false,
+                    subMenuID: "",
                 }
             },
             props:['menu_items', 'social_media'],
