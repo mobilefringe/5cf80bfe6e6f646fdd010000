@@ -165,6 +165,20 @@
                     // this will update the data store, which in turn will trigger the watcher to update the locale in the system
                     this.locale = val; 
                 },
+                showSubMenu: function(id) {
+                    this.showSubMenuItem = true;
+                    this.subMenuID = id;
+                },
+                hideSubMenu: function() {
+                    this.showSubMenuItem = false;
+                },
+                showSubMenuWithID: function(id) {
+                  if(this.subMenuID === id && this.showSubMenuItem) {
+                      return true;
+                  } else {
+                      return false;
+                  }  
+                },
                 handleScroll(event) {
                     var scrolled = window.pageYOffset;
                     if (scrolled >= 150) {
