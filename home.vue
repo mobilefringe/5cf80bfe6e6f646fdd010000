@@ -225,9 +225,10 @@
                         // }
                         
                         // pushes those with startdate before today
-                        if (showOnWebDate => today) {
+                        if (showOnWebDate <= today) {
+                            // if end is in future
                             if (value.end_date) {
-                                if (end <= today) {
+                                if (end => today) {
                                     banners.push(value)
                                 }
                             } else {
