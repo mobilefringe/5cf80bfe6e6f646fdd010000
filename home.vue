@@ -218,7 +218,7 @@
                         console.log(value)
                         
                         
-                        if (value.start_date == null) {
+                        if (value.end_date == null) {
                             banners.push(value)
                             console.log('banners', banners)
                         }
