@@ -222,7 +222,7 @@
                             banners.push(value)
                         }
                         
-                        if (showOnWebDate <= today) {
+                        if (showOnWebDate => today) {
                             
                             // Sort Featured Promotions
                             if (value.end_date) {
