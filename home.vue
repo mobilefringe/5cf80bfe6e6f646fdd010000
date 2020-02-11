@@ -194,16 +194,36 @@
                 homeBanners() {
                     var banners = [];
                     _.forEach(this.$store.state.banners, function (value, key) {
-                        var today = new Date();
-                       console.log(value)
-                        var start = new Date (value.start_date);
-                         console.log(today, 'var start', start)
+                    //     var today = new Date();
+                    //   console.log(value)
+                    //     var start = new Date (value.start_date);
+                    //      console.log(today, 'var start', start)
                          
-                        if (start <= today){
-                            if (value.end_date){
-                                var end = new Date (value.end_date);
-                                if (end >= today){
-                                    banners.push(value);  
+                    //     if (start <= today){
+                    //         if (value.end_date){
+                    //             var end = new Date (value.end_date);
+                    //             if (end >= today){
+                    //                 banners.push(value);  
+                    //             }
+                    //         } else {
+                    //             banners.push(value);
+                    //         }
+                            
+                    //         if (value.cms_fields.subheader) {
+                    //             value.heading = value.cms_fields.subheader;
+                    //         }
+                    //     }
+                        var today = moment.tz(this.timezone).format();
+                        var showOnWebDate = moment.tz(value.start_date, this.timezone).format();
+                        
+                        
+                        if (today >= showOnWebDate) {
+                            
+                            // Sort Featured Promotions
+                            if (value.end_date) {
+                                var end = moment.tz(value.end_date, this.timezone).format();
+                                if (end => today) {
+                                    banners.push(value)
                                 }
                             } else {
                                 banners.push(value);
