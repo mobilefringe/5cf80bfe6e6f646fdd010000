@@ -170,7 +170,6 @@
                 this.loadData().then(response => {
                     var socialFeed = response[3].data;
                     var social_feed = socialFeed.social.instagram;
-                    console.log(socialFeed)
                     this.instaFeed = _.slice(social_feed, [0], [6]);
                     this.instaFeed.map(insta => {
                         if(insta.caption != null){
@@ -198,11 +197,12 @@
                         var today = new Date();
                        console.log(value)
                         var start = new Date (value.start_date);
-                         console.log(today, 'var start', start)
+                        console.log(today, 'var start', start)
                          
                         if (start <= today){
                             if (value.end_date){
                                 var end = new Date (value.end_date);
+                                console.log(end)
                                 if (end >= today){
                                     banners.push(value);  
                                 }
