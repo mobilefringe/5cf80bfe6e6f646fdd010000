@@ -217,6 +217,11 @@
                         var showOnWebDate = moment.tz(value.start_date, this.timezone).format();
                         console.log(value)
                         
+                        
+                        if (showOnWebDate == null) {
+                            banners.push(value)
+                        }
+                        
                         if (showOnWebDate <= today) {
                             
                             // Sort Featured Promotions
@@ -232,9 +237,7 @@
                             if (value.cms_fields.subheader) {
                                 value.heading = value.cms_fields.subheader;
                             }
-                        } else {
-                            banners.push(value);
-                        }
+                        } 
                     });
                     
                     banners = _.orderBy(banners, function(o) { return o.position });
