@@ -215,6 +215,7 @@
                     //     }
                         var today = moment.tz(this.timezone).format();
                         var showOnWebDate = moment.tz(value.start_date, this.timezone).format();
+                        console.log(value)
                         
                         
                         if (today >= showOnWebDate) {
