@@ -220,9 +220,9 @@
                         console.log(today, showOnWebDate, end)
                         
                         // // push all those that are meant to be on rotation 
-                        // if (value.end_date == null) {
-                        //     banners.push(value)
-                        // }
+                        if (value.end_date == null) {
+                            banners.push(value)
+                        }
                         
                         // pushes those with startdate before today
                         if (showOnWebDate => today) {
