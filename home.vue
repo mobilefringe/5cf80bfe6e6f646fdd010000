@@ -222,9 +222,8 @@
                             banners.push(value)
                         }
                         
-                        if (showOnWebDate => today) {
-                            
-                            // Sort Featured Promotions
+                        // if (showOnWebDate => today) {
+                        
                             if (value.end_date) {
                                 var end = moment.tz(value.end_date, this.timezone).format();
                                 if (end => today) {
@@ -237,7 +236,7 @@
                             if (value.cms_fields.subheader) {
                                 value.heading = value.cms_fields.subheader;
                             }
-                        } 
+                        // } 
                     });
                     
                     banners = _.orderBy(banners, function(o) { return o.position });
