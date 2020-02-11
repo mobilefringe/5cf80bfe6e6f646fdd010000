@@ -217,7 +217,7 @@
                         var showOnWebDate = moment.tz(value.start_date, this.timezone).format();
                         var end = moment.tz(value.end_date, this.timezone).format();
                         
-                        console.log(today > showOnWebDate)
+                        console.log(today, showOnWebDate, end)
                         
                         // // push all those that are meant to be on rotation 
                         // if (value.end_date == null) {
