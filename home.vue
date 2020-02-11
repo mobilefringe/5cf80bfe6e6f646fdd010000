@@ -232,6 +232,8 @@
                             if (value.cms_fields.subheader) {
                                 value.heading = value.cms_fields.subheader;
                             }
+                        } else {
+                            banners.push(value);
                         }
                     });
                     
