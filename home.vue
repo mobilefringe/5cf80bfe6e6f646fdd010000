@@ -198,7 +198,7 @@
                         var today = new Date();
                        
                         var start = new Date (value.start_date);
-                         console.log(today, 'start', value.start_date, 'var start', start)
+                         console.log(today, 'var start', start)
                          
                         if (start <= today){
                             if (value.end_date){
