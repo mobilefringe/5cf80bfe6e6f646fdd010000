@@ -215,8 +215,9 @@
                     //     }
                         var today = moment.tz(this.timezone).format();
                         var showOnWebDate = moment.tz(value.start_date, this.timezone).format();
+                        var end = moment.tz(value.end_date, this.timezone).format();
                         
-                        console.log(value, showOnWebDate)
+                        console.log(value, end)
                         
                         
                         if (value.end_date == null) {
@@ -227,7 +228,7 @@
                         // if (showOnWebDate => today) {
                         
                             if (value.end_date) {
-                                var end = moment.tz(value.end_date, this.timezone).format();
+                                
                                 if (end => today) {
                                     banners.push(value)
                                 }
