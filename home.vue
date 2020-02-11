@@ -237,6 +237,7 @@
                                 value.heading = value.cms_fields.subheader;
                             }
                         } 
+                        console.log(banners.length)
                     });
                     
                     banners = _.orderBy(banners, function(o) { return o.position });
