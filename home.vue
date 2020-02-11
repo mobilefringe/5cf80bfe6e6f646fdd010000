@@ -220,7 +220,7 @@
                         
                         if (showOnWebDate == null) {
                             banners.push(value)
-                            console.log(banners)
+                            console.log('banners', banners)
                         }
                         
                         // if (showOnWebDate => today) {
