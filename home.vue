@@ -196,6 +196,7 @@
                     var banners = [];
                     _.forEach(this.$store.state.banners, function (value, key) {
                         var today = new Date();
+                        console.log(today, 'start', value.start_date, 'var start', start)
                         var start = new Date (value.start_date);
                         if (start <= today){
                             if (value.end_date){
