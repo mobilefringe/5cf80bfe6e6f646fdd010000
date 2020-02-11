@@ -217,8 +217,7 @@
                         var showOnWebDate = moment.tz(value.start_date, this.timezone).format();
                         console.log(value)
                         
-                        
-                        if (today >= showOnWebDate) {
+                        if (showOnWebDate <= today) {
                             
                             // Sort Featured Promotions
                             if (value.end_date) {
