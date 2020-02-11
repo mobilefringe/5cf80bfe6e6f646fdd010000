@@ -218,7 +218,7 @@
                         console.log(value)
                         
                         
-                        if (showOnWebDate == null) {
+                        if (value.start_date == null) {
                             banners.push(value)
                             console.log('banners', banners)
                         }
