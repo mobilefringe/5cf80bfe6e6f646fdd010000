@@ -223,24 +223,26 @@
                         console.log(today, showOnWebDate, end)
                         
                         // // push all those that are meant to be on rotation 
-                        // if (value.end_date == null) {
-                        //     banners.push(value)
-                        // }
+                        if (value.end_date == null) {
+                            banners.push(value)
+                        }
                         
                         // pushes those with startdate before today
-                        if (showOnWebDate <= today) {
+                        if (showOnWebDate <= today && today => end) {
                             // if end is in future
-                            if (value.end_date) {
-                                if (end => today) {
+                            // if (value.end_date) {
+                            //     if (end => today) {
                                     banners.push(value)
-                                }
-                            } else {
+                            //     }
+                            // } else {
                              
-                            }
+                            // }
                             if (value.cms_fields.subheader) {
                                 value.heading = value.cms_fields.subheader;
                             }
                         } 
+                        
+                        
                         
                         
                         console.log(banners.length)
