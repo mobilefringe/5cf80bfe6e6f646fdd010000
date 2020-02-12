@@ -197,7 +197,6 @@
                         
                         // old //gets banners that are null start and end
                     //     var today = new Date();
-                    //   console.log(value)
                     //     var start = new Date (value.start_date);
                     //      console.log(today, 'var start', start)
                          
