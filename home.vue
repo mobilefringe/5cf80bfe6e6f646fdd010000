@@ -248,6 +248,7 @@
                     });
                     
                     banners = _.orderBy(banners, function(o) { return o.position });
+                    return _.orderBy(banners, ['position'], ['asc'])
                     return banners
                 },
                 featuredItems() {
