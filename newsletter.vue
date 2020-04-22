@@ -67,7 +67,7 @@
                                     There was an error when trying to submit your request. Please try again later.
                                 </div>
                             </form> 
-                            <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+                         
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
     </div>
 </template>
 <script>
-    define(["Vue", "vuex", "jquery", "vee-validate", "json!site.json"], function(Vue, Vuex, $, VeeValidate, site) {
+    define(["Vue", "vuex", "jquery", "vee-validate", "json!site.json", "campaign_monitor"], function(Vue, Vuex, $, VeeValidate, site, campaign_monitor) {
         Vue.use(VeeValidate);
         return Vue.component("newsletter-component", {
             template: template, // the variable template will be injected
