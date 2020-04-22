@@ -13,7 +13,13 @@
                         <div class="col-md-12">
                             <breadcrumb></breadcrumb>
                             <div v-if="pageContent" v-html="pageContent.body"></div>
-                            <form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/oljiud/" method="post" @submit.prevent="validateBeforeSubmit">
+                            
+                            
+                            
+                            
+                            
+                            
+                            <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A9AD7E5548EF0AECCAE2B7E6E4E9770A055D03829E47C59455A7E89C8385FFF5F71B8D6C738E88DA563BF24FD7A9D1BB3">
                                 <div class="row">
                                     <div class="col-sm-6" >
                                         <label for="fieldwtuuiu" class="visuallyhidden">First Name</label>
@@ -61,6 +67,7 @@
                                     There was an error when trying to submit your request. Please try again later.
                                 </div>
                             </form> 
+                            <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
                         </div>
                     </div>
                 </div>
