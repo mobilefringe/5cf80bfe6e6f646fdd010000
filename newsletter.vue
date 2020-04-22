@@ -13,13 +13,7 @@
                         <div class="col-md-12">
                             <breadcrumb></breadcrumb>
                             <div v-if="pageContent" v-html="pageContent.body"></div>
-                            
-                            
-                            
-                            
-                            
-                            
-                            <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A9AD7E5548EF0AECCAE2B7E6E4E9770A055D03829E47C59455A7E89C8385FFF5F71B8D6C738E88DA563BF24FD7A9D1BB3">
+                            <form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/oljiud/" method="post" @submit.prevent="validateBeforeSubmit">
                                 <div class="row">
                                     <div class="col-sm-6" >
                                         <label for="fieldwtuuiu" class="visuallyhidden">First Name</label>
@@ -67,7 +61,6 @@
                                     There was an error when trying to submit your request. Please try again later.
                                 </div>
                             </form> 
-                         
                         </div>
                     </div>
                 </div>
@@ -76,7 +69,7 @@
     </div>
 </template>
 <script>
-    define(["Vue", "vuex", "jquery", "vee-validate", "json!site.json", "campaign_monitor"], function(Vue, Vuex, $, VeeValidate, site, campaignMonitor) {
+    define(["Vue", "vuex", "jquery", "vee-validate", "json!site.json"], function(Vue, Vuex, $, VeeValidate, site) {
         Vue.use(VeeValidate);
         return Vue.component("newsletter-component", {
             template: template, // the variable template will be injected
