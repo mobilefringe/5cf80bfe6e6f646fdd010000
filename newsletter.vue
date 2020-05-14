@@ -71,7 +71,7 @@
     </div>
 </template>
 <script>
-    define(["Vue", "vuex", "jquery", "vee-validate", "json!site.json", "campaign_monitor"], function(Vue, Vuex, $, VeeValidate, site, campaign_monitor) {
+    define(["Vue", "vuex", "jquery", "vee-validate", "json!site.json"], function(Vue, Vuex, $, VeeValidate, site) {
         Vue.use(VeeValidate);
         return Vue.component("newsletter-component", {
             template: template, // the variable template will be injected
