@@ -45,6 +45,7 @@
                                         </div>
             					    </div>
             					</div>
+            					<input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true">
         					    <div class="margin_40 clearfix"></div>
         					    <div class="row">
                                     <div class="col-xs-12">
