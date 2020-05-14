@@ -62,7 +62,7 @@
                                     There was an error when trying to submit your request. Please try again later.
                                 </div>
                             </form>
-                <!--<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>-->
+                
                         </div>
                     </div>
                 </div>
@@ -70,8 +70,9 @@
         </transition>
     </div>
 </template>
+<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 <script>
-    define(["Vue", "vuex", "jquery", "vee-validate", "json!site.json"], function(Vue, Vuex, $, VeeValidate, site) {
+    define(["Vue", "vuex", "jquery", "vee-validate", "json!site.json", "campaignMonitor"], function(Vue, Vuex, $, VeeValidate, site, campaignMonitor) {
         Vue.use(VeeValidate);
         return Vue.component("newsletter-component", {
             template: template, // the variable template will be injected
