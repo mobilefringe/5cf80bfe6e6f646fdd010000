@@ -62,7 +62,7 @@
                                     There was an error when trying to submit your request. Please try again later.
                                 </div>
                             </form>
-                            <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+                
                         </div>
                     </div>
                 </div>
