@@ -13,7 +13,8 @@
                         <div class="col-md-12">
                             <breadcrumb></breadcrumb>
                             <div v-if="pageContent" v-html="pageContent.body"></div>
-                            <form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/oljiud/" method="post" @submit.prevent="validateBeforeSubmit">
+                            <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A9AD7E5548EF0AECCAE2B7E6E4E9770A055D03829E47C59455A7E89C8385FFF5F71B8D6C738E88DA563BF24FD7A9D1BB3">
+                            <!--<form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/oljiud/" method="post" @submit.prevent="validateBeforeSubmit">-->
                                 <div class="row">
                                     <div class="col-sm-6" >
                                         <label for="fieldwtuuiu" class="visuallyhidden">First Name</label>
@@ -26,8 +27,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <label for="newsletter_email" class="visuallyhidden">Email</label>
-                                        <input v-model="form_data.email" required class="margin_20 form-control" name="cm-oljiud-oljiud" type="email" placeholder="Email" id="newsletter_email">
+                                        <label for="fieldEmail" class="visuallyhidden">Email</label>
+                                        <input v-model="form_data.email" required class="margin_20 form-control" name="cm-oljiud-oljiud" type="email" placeholder="Email" id="fieldEmail">
                                     </div>
                                     <div class="col-sm-6">
                                         <label for="fieldwtuuik" class="visuallyhidden">Phone Number</label>
@@ -38,7 +39,7 @@
                                     <div class="col-sm-12">
                                         <div style="margin-left: 20px">
                                             <label class="checkbox">
-                                                <input name="agree_newsletter" required  type="checkbox">
+                                                <input name="agree_newsletter" id="cm-privacy-consent" required  type="checkbox">
                                                     I agree to receive communications from {{ property.name }}.
                                             </label>
                                         </div>
@@ -60,7 +61,8 @@
                                     <span class="sr-only">{{$t("newsletter_page.error")}} : </span>
                                     There was an error when trying to submit your request. Please try again later.
                                 </div>
-                            </form> 
+                            </form>
+                            <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
                         </div>
                     </div>
                 </div>
