@@ -66,8 +66,8 @@
                                                     <div class="store_text"><h2>{{ store.name }}</h2></div>
                                                 </div>
                                             </div>
-                                            <div v-if="store.flags">
-            								    <div class="store_tag" v-for="(tag, index) in store.flags">
+                                            <div v-if="store.store_flags">
+            								    <div class="store_tag" v-for="(tag, index) in store.store_flags">
                                                     <div class="store_tag_text">{{ tag }}</div>
             								    </div>
                                             </div>
