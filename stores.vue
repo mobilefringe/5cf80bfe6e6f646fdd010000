@@ -67,7 +67,7 @@
                                                 </div>
                                             </div>
                                             <div v-if="store.flags">
-            								    <div class="store_tag" v-for="(tag, index) in store.tags">
+            								    <div class="store_tag" v-for="(tag, index) in store.flags">
                                                     <div class="store_tag_text">{{ tag }}</div>
             								    </div>
                                             </div>
